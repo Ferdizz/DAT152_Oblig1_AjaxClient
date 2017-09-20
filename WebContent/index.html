@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DAT152 - Oblig 1</title>
+</head>
+<body>
+    <h1>Members</h1>
+    <div>
+        <div id="memberlist"></div>
+        <p>
+            <button type="button" id="addMember">Add member</button>
+        </p>
+    </div>
+
+    <div id="modalBox" class="modal">
+      <div class="modal-content">
+
+        <div class="modal-el">
+          <b>Firstname:</b>
+          <input id="firstnameInput" type="text" />
+        </div>
+
+        <div class="modal-el">
+          <b>Lastname:</b>
+          <input id="lastnameInput" type="text" />
+        </div>
+
+        <div class="modal-el">
+          <b>Address:</b>
+          <input id="addressInput" type="text" />
+        </div>
+
+        <div class="modal-el">
+          <b>Phone:</b>
+          <input id="phoneInput" type="text" />
+        </div>
+
+        <div class="modal-el">
+          <button id="btnSubmit"></button>
+          <button id="btnCancel">Cancel</button>
+        </div>
+
+      </div>
+    </div>
+
+    <button id="btnDebug" onclick="debug()">Debug</button>
+    <button id="btnDebug" onclick="getReq()">Debug</button>
+
+    <style type="text/css">
+      .modal {
+        display: none;
+        width: 235px;
+        border: 1px solid black;
+        background: white;
+        padding: 10px;
+        position: fixed;
+        top: 5em;
+        left: 10em;
+        z-index: 1;
+      }
+
+      .modal-el {
+        margin: 10px;
+      }
+    </style>
+
+    <script src="./script/ajax.js"></script>
+    <script src="./script/app.js"></script>
+</body>
+
+</html>
