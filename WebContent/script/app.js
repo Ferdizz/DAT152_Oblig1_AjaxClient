@@ -269,25 +269,17 @@ class UIHandler {
       }
     }
   }
-
 }
 
 const app = new AppController("memberlist", "addMember");
 document.addEventListener('DOMContentLoaded', app.run.bind(app), true);
 
+// Debug method, called by onClick-event from html button
 function debug() {
   console.log("Hello world");
 }
 
-
-
+// Debug method, called by onClick-event from html button
 function getReq() {
-  // const ajax = new AJAXConnection('../Mservices/data/updates/1')
-  //
-  // ajax.onsuccess = (response) => {
-	//   console.log(response);
-  // }
-  //
-  // ajax.get()
-  app.getUpdates(1);
+
 }
